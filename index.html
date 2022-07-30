@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Juego de Ahorcado</title>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap" rel="stylesheet">
+       <link rel="stylesheet" href="./style.css">
+       <link rel="stylesheet" href="./nuevaPalabra.css">
+       
+    </head>
+    <body>
+        <img class="head__logo" src="img/logo.png" alt="Logo de Alura">
+        <div id="ocultar" class="botones_home">
+            <a id="btn__iniciar" href="./juego.html" class="boton_iniciar">Iniciar Juego</a>
+            <button id="nueva__palabra" class="btn__nuevaPalabra" onclick="pantallaAgregarPalabra()">Agregar Palabra</button>
+        </div>  
+        <div id="agregar__palabra" class="palabra__nueva">
+            <input class="input__palabra" type="text" id="input__nueva-palabra"  maxlength="8" placeholder="Ingrese una palabra">
+            <section class="grupo__nuevaPalabra">
+                <div class="info__group">
+                <img src="" class="alerta">
+                <label for="input-texto"> Máx. 8 caracteres</label>
+                </div>
+                <div class="botones__nuevapalabra">
+                <input class="btn__empezar" type="submit" value="Guardar y empezar" onclick="guardarPalabra()" id="btn__guardar">
+                <input class="btn__cancelar" type="submit" onclick="cancelar()" value="Cancelar" id="btn__cancelar">
+                </div> 
+            </section>
+        </div>       
+        
+        <footer class="pie__principal">
+            <p class="copyright">&copy Copyright Desarrollado por Olman Morales, estudiante de Alura - 2022</p>
+        </footer> 
+        
+        <script src="agregarPalabra.js"></script>
+        
+    </body>
+    
+</html>

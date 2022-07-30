@@ -1,0 +1,50 @@
+#agregar__palabra{
+    height: 300px;    
+    flex-direction: column;    
+    justify-content: center;
+    align-items: center;
+}
+
+.input__palabra{
+    background: #F3F5FC;
+    color: #0A3871;
+    border: none;
+    width: 300px;
+    height: 48px;
+    left: 376px;
+    line-height: 48px;
+    position: absolute;
+    font-size: 32px;
+    outline: none;
+    top: 256px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.grupo__nuevaPalabra{
+    display: flex;
+    flex-direction: column;
+    margin-top: 600px;
+    justify-content: center;
+}
+
+.btn__empezar, .btn__cancelar{
+    flex-direction: row;
+    border-radius: 24px;
+    font-family: Inter;
+    font-size: 16px;
+    gap: 8px;
+    width: 300px;
+    height: 67px;
+}
+
+.btn__empezar{
+    background: #0A3871;
+    color: white;
+}
+
+.btn__cancelar{
+    border-color: #0A3871;
+    color: #0A3871;
+}

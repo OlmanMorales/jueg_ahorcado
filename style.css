@@ -1,0 +1,114 @@
+body{
+    background: #F3F5FC;
+}
+
+.head__logo{
+    margin: 1rem;
+}
+
+.botones_home{
+    display: flex;
+    flex-direction: column;   
+    align-items: center;
+    margin-top: 20%;    
+}
+
+
+
+.boton_iniciar{    
+    color: white;
+    display: block;    
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    height: 114px;
+    max-width: 317px;    
+    padding: 3rem 2rem;
+    text-align: center;
+    text-decoration: none;
+    background-color: #0a3871;
+    border-radius: 24px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.btn__nuevaPalabra{
+    border: 1px solid #0a3871;
+    color: #0a3871;
+    display: block; 
+    font-family: Inter; 
+    font-size: 16px;  
+    font-weight: bold;
+    line-height: 19px;
+    height: 67px;
+    margin-top: 2%;
+    max-width: 280px;
+    padding: 1rem 2rem;
+    border-radius: 24px;
+    text-align: center;
+    width: 100%;    
+}
+
+#pantalla__juego{
+    height: 650px;
+}
+
+.pie__principal{
+    display: flex;
+    font-size: 12px;
+    justify-content: center;
+    margin-top: 300px;
+}
+
+
+
+/* Estilo del juego */
+.botones{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.btn__nuevojuego{
+    background-color: #0a3871;
+    color: white;
+    display: block;    
+    margin-left: 1rem;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;  
+    font-weight: 400;
+    height: 67px;
+    max-width: 280px;   
+    padding: 1rem 2rem;
+    border-radius: 24px;
+    width: 100%;
+} 
+
+.btn__desistir{
+    border: 1px solid #0a3871;
+    color: #0a3871;
+    text-decoration: none;
+    display: block;
+    align-items: center;
+    font-family: Inter; 
+    font-size: 16px;  
+    font-weight: 400;   
+    margin-left: 1rem;
+    max-width: 240px;
+    text-align: center;   
+    padding: 1rem 2rem;
+    border-radius: 24px;
+    width: 100%;
+}
+
+.pie__secundario{
+    display: flex;
+    font-size: 12px;
+    justify-content: center;
+    margin: 1rem;
+}
+
+
