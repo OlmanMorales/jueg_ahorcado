@@ -11,19 +11,23 @@ function pantallaAgregarPalabra() {
 }
 
 function guardarPalabra() {   
-    
-    let palabraNueva = document.getElementById('input__nueva-palabra').value;
-      
+  let mayusculas = new RegExp('^[A-Z]+$');  
+  let palabraNueva = document.getElementById('input__nueva-palabra').value;
+  if (mayusculas.test(palabraNueva)){
     if(palabraNueva !== ""){
       localStorage.palabraNueva = document.getElementById('input__nueva-palabra').value;
       alert('La palabra fue guardada');
-      document.location.href="./juego.html";
-     
+      document.location.href="./juego.html";     
     }
     else{
       alert("Ninguna palabra ha sido digitada")
     }  
-    
+
+  }else{
+    alert("Solo Palabras en Mayusculas")
+  }
+
+  
 }
 
 function cancelar(){

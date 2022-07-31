@@ -6,9 +6,8 @@ var aciertos = 0;
 var tablero = document.getElementById('pantalla__juego').getContext('2d');
 var permitidas = new RegExp('^[A-Z]+$');
 
-
 function seleccionPalabraSecreta() {
-    palabras.push(localStorage.getItem('palabraNueva').toUpperCase());
+    palabras.push(localStorage.getItem('palabraNueva'));
     var palabra = palabras[Math.floor(Math.random() * palabras.length)]
     palabraSecreta = palabra
     return palabraSecreta
@@ -21,7 +20,7 @@ function dibujarGuiones() {
     tablero.strokeStyle = "#0A3871";
     tablero.beginPath()
 
-    var ancho = 600 / palabraSecreta.length
+    var ancho = 600 / palabraSecreta.length;
     for (let i = 0; i < palabraSecreta.length; i++) {
         tablero.moveTo(460 + (ancho * i), 620)
         tablero.lineTo(510 + (ancho * i), 620)
@@ -40,7 +39,7 @@ function letraCorrecta(index) {
     tablero.LineJoin = "round";
     tablero.fillStyle = "#0A3871";
 
-    var ancho = 600 / palabraSecreta.length
+    var ancho = 600 / palabraSecreta.length;
     tablero.fillText(palabraSecreta[index], 468 + (ancho * index), 610)
 }
 
